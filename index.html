@@ -1,63 +1,33 @@
-<!DOCTYPE html>
+# Create a more graphical main page
+cat < 'EOF' > /var/www/html/index.html
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Login Page </title>
+<title>Webserver-1</title>
 <style>
-Body {
-  font-family: Calibri, Helvetica, sans-serif;
-  background-color: pink;
-}
-button {
-       background-color: #4CAF50;
-       width: 100%;
-        color: orange;
-        padding: 15px;
-        margin: 10px 0px;
-        border: none;
-        cursor: pointer;
-         }
- form {
-        border: 3px solid #f1f1f1;
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0066ff, #33ccff);
+        color: white;
+        text-align: center;
+        padding-top: 15%;
     }
- input[type=text], input[type=password] {
-        width: 100%;
-        margin: 8px 0;
-        padding: 12px 20px;
+    h1 {
+        font-size: 48px;
+        text-shadow: 2px 2px 5px black;
+    }
+    .box {
+        background: rgba(0,0,0,0.3);
         display: inline-block;
-        border: 2px solid green;
-        box-sizing: border-box;
-    }
- button:hover {
-        opacity: 0.7;
-    }
-  .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        margin: 10px 5px;
-    }
-
-
- .container {
-        padding: 25px;
-        background-color: lightblue;
+        padding: 30px 50px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
     }
 </style>
 </head>
 <body>
-    <center> <h1> Login Form </h1> </center>
-    <form>
-        <div class="container">
-            <label>Username : </label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <label>Password : </label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-            <button type="button" class="cancelbtn"> Cancel</button>
-            Forgot <a href="#"> password? </a>
-        </div>
-    </form>
+    <div class="box">
+        <h1>🚀 Webserver-1 Running Successfully 🚀</h1>
+    </div>
 </body>
 </html>
 
